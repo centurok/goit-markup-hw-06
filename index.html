@@ -426,6 +426,37 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <form class="contact-form">
+          <h3 class="form-title">Оставьте свои данные, мы вам перезвоним</h3>
+          <label for="" class="label">Имя</label>
+            <input type="text" name="user-name" class="form-input">
+         
+          <label for="" class="label">Телефон</label>
+            <input type="tel" name="user-tel" class="form-input">
+          
+          <label for="" class="label">Почта</label>
+            <input type="email" name="user-email" class="form-input">
+         
+          <label for="text" class="label">Комментарий</label>
+            <textarea name="text" name="user-comment" id="" class="form-comment"></textarea>
+          
+          
+          <label class="label-checkbox">
+            <input name="checkbox" type="checkbox" class="checkbox visually-hidden">
+            <span class="icon">
+              <!-- <svg class="checkbox-svg" width="16" height="15">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg> -->
+              <!-- <svg class="iconcheck-svg" width="16" height="15">
+                <use href="./images/icons.svg#icon-iconcheck"></use>
+              </svg> -->
+            </span>
+            Соглашаюсь с рассылкой и принимаю Условия договора
+          </label>
+
+          <button type="submit" class="form-button">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
