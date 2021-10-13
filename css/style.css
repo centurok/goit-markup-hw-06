@@ -568,6 +568,10 @@ img {
   margin-bottom: 9px;
 }
 
+.ftr-enjoy {
+  margin-right: 93px;
+}
+
 .enjoy-title {
   color: var(--txt-white);
   font-size: 14px;
@@ -611,6 +615,62 @@ img {
 .enjoy-icon-link:hover,
 .enjoy-icon-link:focus {
   background-color: var(--bgd-blue);
+}
+
+.title-subscribe {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--txt-white);
+  margin-bottom: 20px;
+}
+
+.subscribe-box {
+  display: flex;
+}
+
+.form-subscribe {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 12px;
+  outline: none;
+  padding-left: 16px;
+}
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-right: 12px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--bgd-blue);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--txt-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.icon-send {
+  fill: var(--txt-white);
+  margin-left: 12px;
+}
+
+.form-subscribe::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
 }
 
 /* Main Portfolio */
@@ -675,7 +735,8 @@ img {
 
 .project-link {
   text-decoration: none;
-  /* transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 .project-item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -787,6 +848,15 @@ img {
   top: 8px;
   right: 8px;
   position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  fill: var(--txt-blue);
 }
 
 .contact-form {
@@ -808,6 +878,56 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 10px;
+  cursor: pointer;
+  padding-left: 42px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-person {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-name {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--bgd-blue);
+}
+
+.icon-modal {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:hover + .icon-modal,
+.form-input:focus + .icon-modal {
+  fill: var(--txt-blue);
+}
+
+.form-tel {
+  position: relative;
+}
+
+.icon-tel {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+
+.form-email {
+  position: relative;
+}
+
+.icon-email {
+  position: absolute;
+  top: 11px;
+  left: 12px;
 }
 
 .label {
@@ -818,6 +938,7 @@ img {
   color: var(--txt-dark-gray);
   display: flex;
   margin-bottom: 4px;
+  cursor: pointer;
 }
 
 .form-comment {
@@ -827,6 +948,15 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 20px;
+  outline: none;
+  padding: 12px 16px;
+}
+
+.form-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .label-checkbox {
@@ -838,6 +968,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .form-button {
@@ -873,6 +1004,14 @@ img {
   background-image: url(../images/iconcheck.svg);
   background-size: contain;
   background-origin: border-box;
+}
+
+.contract-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--txt-blue);
 }
 
 /* .checkbox:checked + .icon .checkbox-svg {
