@@ -1000,8 +1000,8 @@ img {
   cursor: pointer;
 }
 
-.label-checkbox:focus .icon,
-.label-checkbox:hover .icon {
+.checkbox:focus + .icon,
+.checkbox:hover + .icon {
   border-color: var(--bgd-blue);
 }
 
